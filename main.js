@@ -200,11 +200,25 @@ animeText();
 document.addEventListener("DOMContentLoaded", function() {
     var audio = document.getElementById("audio");
     var playButton = document.getElementById("playButton");
-  
+    
     playButton.addEventListener("click", function() {
       playButton.remove();
       audio.play();
+      audio.volume = 0.1;
+      var paragraph = document.createElement('p');
+
+      paragraph.className = 'birthday';
+      
+
+      var text = document.createTextNode('С Днем Рождения!');
+      
+      paragraph.appendChild(text);
+      
+     
+      document.body.appendChild(paragraph);
     });
+
+
   });
 
 

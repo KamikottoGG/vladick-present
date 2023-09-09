@@ -48,10 +48,19 @@ body {
     justify-content: center;
 
 }
+.audio{
+    opacity: 0;
+}
+
 .blockButton{
     position: absolute;
     height: 100%;
     width: 100%;
+    background: linear-gradient(to left , #aa98a9, #201f20);
+    color: aqua;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    cursor: pointer;
 }
 .text{
     font-size: xx-large;
@@ -90,3 +99,41 @@ body {
         left: 100%;
     }
 }
+
+@keyframes gradientShift {
+    0% {
+      --gradient-start: #ff0000;
+      --gradient-end: #0000ff;
+      rotate: -15deg;
+    }
+    50% {
+      --gradient-start: #0000ff;
+      --gradient-end: #ff0000;
+      rotate: 15deg;
+    }
+    100% {
+      --gradient-start: #ff0000;
+      --gradient-end: #0000ff;
+      rotate: -15deg;
+    }
+  }
+  
+  .birthday {
+    opacity: 0;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    animation: gradientShift 5s linear infinite, create 1s linear forwards;
+
+    margin-left: -40rem;
+  }
+
+@keyframes create{
+    to{
+        opacity: 1;
+    }
+}
+
