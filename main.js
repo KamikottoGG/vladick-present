@@ -197,6 +197,16 @@ animeText();
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("audio");
+    var playButton = document.getElementById("playButton");
+  
+    playButton.addEventListener("click", function() {
+      playButton.remove();
+      audio.play();
+    });
+  });
+
 
 
 

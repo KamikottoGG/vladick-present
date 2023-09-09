@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono:wght@600&display=swap');
+
 body {
     background-color: #aa98a9;
     margin: 0;
@@ -45,9 +48,15 @@ body {
     justify-content: center;
 
 }
-
+.blockButton{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 .text{
     font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .enter-text{
