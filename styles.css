@@ -1,0 +1,83 @@
+body {
+    background-color: #aa98a9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative; /* Добавляем позиционирование */
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+    animation: enter linear 2s 1;
+    position: absolute; /* Позиционирование элемента внутри .container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирование элемента */
+}
+
+.enter {
+    animation: enter linear 2s forwards;
+}
+
+.leave {
+    animation: leave linear 2s forwards;
+}
+
+.text.container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text{
+    font-size: xx-large;
+}
+
+.enter-text{
+    animation: text-enter 2s linear forwards;
+}
+.leave-text{
+    animation: text-leave 2s linear forwards;
+}
+
+@keyframes text-enter {
+    from{
+        opacity: 0;
+    }
+}
+@keyframes text-leave{
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        left: -100%;
+    }
+}
+
+@keyframes leave {
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
