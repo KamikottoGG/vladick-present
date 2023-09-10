@@ -182,7 +182,7 @@ function animeText(){
     
     endlessLoopForArray(myArray, (item) => {
         element.textContent = item
-        if (item == myArray.at(1))
+        if (item == myArray.at(3))
         {
             document.body.classList.add("effect");
             let audio = document.getElementById("audio");
