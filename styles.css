@@ -11,6 +11,42 @@ body {
     overflow: hidden;
     height: 100vh;
 }
+.animate{
+    animation: animate-body 5s ease-in infinite;
+}
+
+@keyframes animate-body {
+    50%{
+        background-color: #c49ec4;
+    }
+    100%{
+        background-color: #aa98a9;
+    }
+    
+}
+
+.effect {
+    animation: changeBackground 3s ease-in-out forwards;
+
+  }
+  
+  @keyframes changeBackground {
+    0% {
+    background-color: #aa98a9;
+
+    }
+    10% {
+        background-color: #00054d; 
+    }
+    90%{
+        background-color: #00054d; 
+    }
+    100%{
+        background-color: #aa98a9;
+    }
+
+  }
+  
 
 .container {
     flex: 1;
@@ -66,6 +102,12 @@ body {
     font-size: xx-large;
     font-family: 'Poppins', sans-serif;
 
+}
+
+.text-light{
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
 }
 
 .enter-text{
